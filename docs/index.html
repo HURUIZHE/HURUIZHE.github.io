@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的个人网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        section#main {
+            padding: 15px;
+            background: #ffffff;
+        }
+        section#main h1 {
+            font-size: 2em;
+            color: #333333;
+        }
+        section#main p {
+            font-size: 1em;
+            line-height: 1.6em;
+            color: #333333;
+        }
+        footer {
+            background: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <h1>欢迎来到我的网站</h1>
-  <p>这是一个简单的 L 页面。</p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">张三</span> 的个人简历</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="contact.html">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h1>个人简介</h1>
+            <p>我是一名热情的前端开发者，拥有超过5年的网页设计和开发经验。我热爱将创意变为现实，并致力于通过最新的技术提升用户体验。</p>
+
+            <h1>技能</h1>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript & jQuery</li>
+                <li>React & Node.js</li>
+                <li>版本控制（Git）</li>
+                <li>响应式设计</li>
+            </ul>
+
+            <h1>工作经历</h1>
+            <p><strong>前端开发者</strong> - 某某科技公司</p>
+            <p><small>2018年6月 - 至今</small></p>
+            <p>在某某科技公司，我负责开发和维护公司的多个关键项目，包括客户网站和内部工具的开发。</p>
+
+            <h1>教育背景</h1>
+            <p><strong>计算机科学</strong> - 某某大学</p>
+            <p><small>2014年9月 - 2018年5月</small></p>
+            <p>在某某大学，我学习了计算机科学的基础知识，并专注于网页开发和设计。</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 &copy; 2024 张三</p>
+    </footer>
 </body>
 </html>
